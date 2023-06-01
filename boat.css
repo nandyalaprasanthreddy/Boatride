@@ -1,0 +1,28 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+#body {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  background-color: cyan;
+}
+button {
+  background-color: #e83574;
+  font-size: 20px;
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+}
+form {
+  background-color: lawngreen;
+  height: 250px;
+}

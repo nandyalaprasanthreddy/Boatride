@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boat ride</title>
+    <link rel="stylesheet" href="boat.css" />
+  </head>
+  <body>
+    <form action="">
+      <div id="head"><h1>Boat Ride Bill Automation</h1></div>
+      <div id="body">
+        <table>
+          <tr>
+            <td><label for="customername">Customer Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="customername"
+                placeholder="Customer Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phoneno">Phone Number</label></td>
+            <td><input type="tel" id="phonenumber" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="mail" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="personscount">Number Of Persons</label></td>
+            <td><input type="number" id="personscount" /></td>
+          </tr>
+          <tr>
+            <td><label for="boattype">Boat Type</label></td>
+            <td>
+              <select name="boat" id="boattype">
+                <option value='{"seats" : 2,"charges" : 240}'>
+                  2 seater boat
+                </option>
+                <option value='{"seats" : 4,"charges" : 260}'>
+                  4 seater boat
+                </option>
+                <option value='{"seats" : 8,"charges" : 560}'>
+                  8 seater boat
+                </option>
+                <option value='{"seats" : 15,"charges" : 990}'>
+                  15 seater boat
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hours">Travel Duration In Hours</label></td>
+            <td><input type="number" id="hours" /></td>
+          </tr>
+        </table>
+      </div>
+      <div id="btn">
+        <button type="submit" id="booking" onclick="bookRide()">
+          Book Ride
+        </button>
+        <b id="message"></b>
+      </div>
+    </form>
+    <script src="./boat.js"></script>
+  </body>
+</html>
